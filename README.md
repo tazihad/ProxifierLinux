@@ -19,14 +19,11 @@ chmod +x 3.reset-ip-tables.sh
 ## Usage
 
 1. Setup redsocks.conf (Example config given)
-2. 
-3. `/etc/redsocks.conf`
-4. Open Terminal and run 
-5. 
-6. `sudo ./1.start-redsoks.sh`
-7. Open another terminal/tab and run 
-8. 
-9. `sudo ./2.iptables-setup.sh`
+`/etc/redsocks.conf`
+2. Open Terminal and run  
+`sudo ./1.start-redsoks.sh`
+3. Open another terminal/tab and run  
+`sudo ./2.iptables-setup.sh`
 
 Done. [Check IP](https://ifconfig.me/)
 
