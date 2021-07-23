@@ -13,7 +13,7 @@ Install redsocks  [redsocks](https://github.com/darkk/redsocks#packages).
 
 Done. [Check IP](https://ifconfig.me/)
 
-4. CTRL+Z to exit first script and flush iptable `sudo ./3.reset-ip-tables.sh`
+4. CTRL+Z to exit first script and flush iptables `sudo ./3.reset-ip-tables.sh`
 
 
 More Information:  [redsocks](https://github.com/darkk/redsocks), [superuser](https://superuser.com/a/1402071), [crosp.net](https://crosp.net/blog/administration/install-configure-redsocks-proxy-centos-linux/)
