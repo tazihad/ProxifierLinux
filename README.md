@@ -18,7 +18,7 @@ chmod +x 3.reset-ip-tables.sh
 
 ## Usage
 
-1. Setup redsocks.conf (Example config given)
+1. Setup redsocks.conf (Example config given)  
 `/etc/redsocks.conf`
 2. Open Terminal and run  
 `sudo ./1.start-redsoks.sh`
