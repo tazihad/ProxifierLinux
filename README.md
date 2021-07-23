@@ -25,9 +25,11 @@ chmod +x 3.reset-ip-tables.sh
 3. Open another terminal/tab and run  
 `sudo ./2.iptables-setup.sh`
 
-Done. [Check IP](https://ifconfig.me/)
+Done. 
+[Check IP](https://ifconfig.me/)
 
-4. CTRL+Z to exit first script and flush iptables `sudo ./3.reset-ip-tables.sh`
+4. CTRL+Z to exit first script and flush iptables  
+`sudo ./3.reset-ip-tables.sh`
 
 
 More Information:  [redsocks](https://github.com/darkk/redsocks), [superuser](https://superuser.com/a/1402071), [crosp.net](https://crosp.net/blog/administration/install-configure-redsocks-proxy-centos-linux/)
