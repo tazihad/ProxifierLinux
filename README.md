@@ -11,8 +11,9 @@ cd proxifier-linux
 ```
 Make executable of all files.
 ```
-chmod +x start-proxifier-linux.sh
-chmod +x stop-proxifier-linux.sh
+chmod +x 1.start-redsoks.sh
+chmod +x 2.iptables-setup.sh
+chmod +x 3.reset-ip-tables.sh
 ```
 
 ## Usage
@@ -20,12 +21,14 @@ chmod +x stop-proxifier-linux.sh
 1. Setup redsocks.conf (Example config given)  
 `/etc/redsocks.conf`
 2. Open Terminal and run  
-`./start-proxifier-linux.sh`
+`sudo ./1.start-redsoks.sh`
+3. Open another terminal/tab and run  
+`sudo ./2.iptables-setup.sh`
 
 Done. [Check IP](https://ifconfig.me/)
 
-3. CTRL+Z to exit from script and flush iptables  
-`./stop-proxifier-linux.sh`
+4. CTRL+Z to exit first script and flush iptables  
+`sudo ./3.reset-ip-tables.sh`
 
 
 More Information:  [redsocks](https://github.com/darkk/redsocks), [superuser](https://superuser.com/a/1402071), [crosp.net](https://crosp.net/blog/administration/install-configure-redsocks-proxy-centos-linux/)

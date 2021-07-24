@@ -1,15 +1,5 @@
 #!/bin/sh
 
-if [ $EUID != 0 ]; then
-    sudo "$0" "$@"
-    exit $?
-fi
-
-
-# start redsocks
-redsocks -c /etc/redsocks.conf
-
-
 # Create new chain
 iptables -t nat -N REDSOCKS
 
@@ -30,7 +20,6 @@ iptables -t nat -A REDSOCKS -p tcp -j REDIRECT --to-ports 12345
 iptables -t nat -A OUTPUT -p tcp --dport 443 -j REDSOCKS
 iptables -t nat -A OUTPUT -p tcp --dport 80 -j REDSOCKS
 
-# Defining the following rules in the PREROUTING chain. For redirecting incomming packets to the REDSOCKS chain.
+# Defining the following rules in the PREROUTING chain. For redirecting incomming packets to the REDSOCKS chain. 
 iptables -t nat -A PREROUTING -p tcp --dport 443 -j REDSOCKS
 iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDSOCKS
-
