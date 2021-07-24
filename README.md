@@ -20,12 +20,12 @@ chmod +x stop-proxifier-linux.sh
 1. Setup redsocks.conf (Example config given)  
 `/etc/redsocks.conf`
 2. Open Terminal and run  
-`sudo ./start-proxifier-linux.sh`
+`./start-proxifier-linux.sh`
 
 Done. [Check IP](https://ifconfig.me/)
 
 3. CTRL+Z to exit from script and flush iptables  
-`sudo ./stop-proxifier-linux.sh`
+`./stop-proxifier-linux.sh`
 
 
 More Information:  [redsocks](https://github.com/darkk/redsocks), [superuser](https://superuser.com/a/1402071), [crosp.net](https://crosp.net/blog/administration/install-configure-redsocks-proxy-centos-linux/)
