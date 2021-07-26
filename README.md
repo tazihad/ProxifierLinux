@@ -15,7 +15,7 @@ cd proxifier-linux
 1. Setup redsocks.conf (Example config given)  
 `/etc/redsocks.conf`
 2. Open Terminal and run  
-`./start-proxifier.sh`
+`sudo ./start-proxifier.sh`
 
 Done. [Check IP](https://ifconfig.me/)
 
